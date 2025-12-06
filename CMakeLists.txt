@@ -47,6 +47,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
+    Drivers/DHT11/mk_dht11.c
     Drivers/LED/led.c
     Drivers/ring_buffer/ring_buffer.c
     Drivers/ssd1306/ssd1306.c

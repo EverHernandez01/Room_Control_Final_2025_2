@@ -193,6 +193,9 @@ int main(void)
   printf("Hello, 4100901!\r\n");
   while (1) {
     heartbeat(); // Call the heartbeat function to toggle the LED
+    
+    // Entrar en modo Sleep, se detiene la CPU hasta la próxima interrupción (EXTI)
+    HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
 
     // TODO: TAREA - Descomentar cuando implementen la máquina de estados
     // room_control_update(&room_system);
