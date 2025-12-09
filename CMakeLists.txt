@@ -21,8 +21,6 @@ endif()
 # Set the project name
 set(CMAKE_PROJECT_NAME Room_Control_Final_2025_1)
 
-# Include toolchain file
-include("cmake/gcc-arm-none-eabi.cmake")
 
 # Enable compile command to ease indexing with e.g. clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
@@ -63,6 +61,8 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     Drivers/ring_buffer
     Drivers/ssd1306
     Drivers/keypad
+    Drivers/DHT11
+    Core/Inc
     # Add user defined include paths
 )
 
