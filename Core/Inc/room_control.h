@@ -7,10 +7,6 @@
 
 #define PASSWORD_LENGTH 4
 #define MAX_TEMP_READINGS 5
-#define DOOR_LOCK_Pin GPIO_PIN_5
-#define DOOR_LOCK_GPIO_Port GPIOA
-
-
 
 typedef enum {
     ROOM_STATE_LOCKED,
